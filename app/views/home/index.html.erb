@@ -1,0 +1,32 @@
+<div id="adtaily">
+  <script type="text/javascript" id="AdTaily_Widget" key="7Rma2eepugAElNZ" src="http://static.adtaily.com/widget.js"></script>
+  <noscript>Reklamy na tej stronie sprzedawane są przez widget z AdTaily.com (PLBLOADTAILY0001)</noscript>
+</div>
+
+<img id="debian-logo" src="/images/debian.png" />
+
+<% for entry in @entries -%>
+  <div class="post hentry">
+    <div class="entry-head">
+      <h3 class="entry-title" <% if entry == @entries.first %> style="width: 70%" <% end %>>
+          <%= link_to h(entry.name), redirect_path(entry.id) %>
+      </h3>
+      <div class="entry-meta">
+	      Opublikowany <abbr class="published entry-date"><%=h entry.published_at.strftime("%Y-%m-%d %H:%M") %></abbr>. 
+	      Przez <%= link_to entry.blogger.username, entry.blogger.url %>.
+      </div> 
+    </div>
+
+    <div class="entry-content">
+      <% if entry == @entries.first %><div id="logo_wrapper"></div><% end -%>
+        <%= truncate_w(entry.content, SITE_CONFIG[:number_of_words]) %>
+    </div>
+  </div>
+<% end -%>
+
+<div id="rollingarchives" >
+  <div id="rollnavigation">
+    <%= will_paginate @entries, :page_links => false, :previous_label => "&laquo; Poprzednie", :next_label => "Następne &raquo;" %>
+  </div> 
+</div>
+

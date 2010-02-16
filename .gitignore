@@ -1,0 +1,7 @@
+tmp/*
+log/*
+*.sqlite3
+config/database.yml
+config/blip.yml
+*.swp
+*.*~

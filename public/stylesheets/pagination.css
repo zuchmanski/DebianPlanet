@@ -1,0 +1,38 @@
+.paginaton {
+  margin-bottom: -10px; margin-top: -10px;
+}
+
+.pagination a {
+  font-weight: bold;
+}
+
+.pagination .disabled {
+  display: none;
+}
+
+.paginaton a:hover {
+  text-decoration: underline;
+}
+
+.paginaton a:active, .paginaton a:focus {
+  outline: none;
+}
+
+.prev_page, .next_page {
+  position: absolute;
+  bottom: 5px;
+}
+
+.prev_page:hover, .next_page:hover {
+  text-decoration: underline;
+}
+
+.prev_page {
+  left: 0;
+  text-align: left;
+}
+
+.next_page {
+  right: 0;
+  text-align: right;
+}

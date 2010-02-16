@@ -1,0 +1,7 @@
+<h3 class="page_header">Lista blogerów:</h3>
+
+<ul class="page_infos">
+  <% for blogger in @bloggers %>
+    <li><%= link_to blogger.username, blogger.url %> (<%= link_to 'feed', blogger.rss %>)</li>
+  <% end -%>
+</ul>

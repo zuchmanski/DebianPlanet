@@ -1,0 +1,170 @@
+#header .blog-title a, #header .description {
+  color: #ffffff;
+}
+
+h3.page_header {
+  margin-bottom: 10px;   
+}
+
+ul.page_infos {
+  margin-left: 20px;
+  font-size: 10pt;
+}
+
+h3 a.stats {
+  font-size: 10px;
+}
+
+#adtaily {
+  width: 70%;
+}
+.AdTaily_Widget_Title {
+  display: none !important;
+}
+
+#page {
+  padding-bottom: 20px;
+}
+
+.AdTaily_Widget_Buy {
+  margin-left: -1px !important;
+}
+
+.content {
+  padding-bottom: 100px;
+}
+
+#logo_wrapper {
+  float: right; 
+  width: 200px; 
+  height: 100px;
+}
+
+#debian-logo {
+  position: absolute; 
+  right: -13px; 
+  top: -39px;
+}
+
+/*
+	Author Name	: 	Rafał Olejnik
+	Author Site	: 	http://pakos.biz
+	Style Name	: 	Minimalist
+	Description: K2 style for k2-1.0-revision-965-2010-01-06
+	Style URI	:	http://pakos.biz
+	Version		: 	4.1
+*/
+body {
+	background: url('/images/stripe.png');
+	}
+#page {
+	margin: 20px auto;
+	background: #fff;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	-moz-border-radius-bottomright: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	}
+.columns-one #page {
+	width: 780px;
+	}
+#header {
+	height: 30px;
+	background: none;
+	}
+#primary {
+	width: 715px;
+	}
+.columns-one .secondary {
+	border: none;
+	width: 225px;
+	padding: 0 10px;
+}
+body.smartposition #rollingarchives {
+	width: 715px;
+	}
+.blog-title {
+	display:none;
+	}
+#header .description {
+	display: none;
+	}
+h2 a:hover, h2 span a:hover {
+	color: #444 !important;
+	}
+	.menu > ul > li:hover  {
+	background-color: #fff;
+	}
+.menu > ul > li > a {
+	padding: 5px 10px;
+	color: #444;
+	}
+.menu > ul > li > a:hover {
+	color: #444;
+	text-decoration: underline;
+	}
+.feedlink {
+	display: none;
+	}
+#footer {
+	color: #D3D7CF;
+	}
+#footer a {
+	color: #D3D7CF;
+	border: none;
+	text-decoration: none;
+	}
+#footer a:hover {
+	color: #D3D7CF;
+	text-decoration: underline;
+	}
+.footerfeedlinks {
+	display: none;
+	}
+.footerstats {
+	display: inline;
+}
+a {
+	color: #444;
+	}
+.entry-content a {
+	text-decoration: underline;
+	}
+.entry-content a:visited {
+	color: #444;
+	}
+.comment-content a {
+	text-decoration: underline;
+	}
+.comment-content a:visited {
+	color: #444;
+	}
+.bypostauthor {
+	background: #fff;
+	}
+code {
+	margin: 10px 0 0 0;
+	display : block;
+	padding: 10px 10px 10px 30px;
+	background: #555753 url('images/code.png') 5px center no-repeat;
+	color: #EEEEEC;
+	font-size: 1.1em;
+	}
+a[rel~="attachment"] img,
+.gallery a img,
+.wp-caption {
+	background-color: #F3F3F3;
+	border: 1px solid #ddd;
+	padding: 3px;
+	text-align: center;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	}
+a[rel~="attachment"] img:hover,
+.gallery a img:hover,
+.wp-caption:hover {
+	border: 2px solid #ddd;
+	}

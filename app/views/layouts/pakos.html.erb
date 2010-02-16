@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+
+<head profile="http://purl.org/uF/2008/03/ http://purl.org/uF/hAtom/0.1/">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Planeta Debiana</title>
+	<%= stylesheet_link_tag "k2", "minimalist4", "pagination" %>
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/DebianPlanet" />
+</head>
+
+<body class="columns-one">
+
+<div id="page">
+  <div id="header">
+    <h1 class='blog-title'><%= link_to 'Planeta Debiana', root_url %></h1>
+    <p class="description">debian, planet, ubuntu, linux, news, agregator, planeta</p>
+    <div class="menu">
+      <ul>
+        <li class="current_page_item"><%= link_to 'Strona główna', root_path %></a></li>
+        <li class="page_item"><%= link_to 'Blogerzy', community_path %></li>
+        <li class="page_item"><%= link_to 'Kontakt', contact_path %></li>
+      </ul>
+    </div>
+  </div> <!-- #header -->
+
+  <hr />
+
+  <div class="content">
+    <div id="primary-wrapper">
+	    <div id="primary">
+	      <div id="rollingcontent" class="hfeed">
+          <div id="dynamic-content">
+	          <%= yield %>
+          </div><!-- #rollingcontent .hfeed -->
+    	  </div> <!-- #dynamic-content -->
+		  </div> <!-- #primary -->
+    </div> <!-- #primary-wrapper -->
+  </div> <!-- .content -->
+  <div class="clear"></div>
+</div> <!-- Close Page -->
+  
+<hr />
+
+<div id="footer">
+	<p class="footerpoweredby">
+    Powered by <%= link_to 'sebcioz', "http://sebcioz.jogger.pl" %> with <a href="http://rubyonrails.org/">Ruby On Rails</a>
+  </p>
+  <p class="footerstyledwith">
+    Styled by <a href="http://pakos.biz">Pakos</a> with <a href="http://pakos.biz" title="Minimalist by Rafał Olejnik">Minimalist</a>   <p>
+    <%= link_to 'Entries Feed', feed_url %> 
+  </p>
+<div><!-- #footer -->
+
+<script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+  try {
+    var pageTracker = _gat._getTracker("UA-12903951-1");
+    pageTracker._trackPageview();
+    } catch(err) {}
+</script>
+
+</body>
+</html> 

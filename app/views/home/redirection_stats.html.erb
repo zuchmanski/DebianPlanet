@@ -1,0 +1,6 @@
+<h3 class="page_header">Statystyki dla <%= link_to h(@entry.name), @entry.url %></h3>
+
+<ul class="page_infos">
+  <li>URL: <%= link_to h(@entry.url), h(@entry.url) %></li>
+  <li>Clicks: <strong><%= @entry.redirection_counter %></strong></li>
+</ul>
