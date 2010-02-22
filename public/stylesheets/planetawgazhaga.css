@@ -1,0 +1,37 @@
+div.menu li.page_item a, div.menu li.current_page_item a {
+	color: #D70751;
+}
+
+div.menu li.current_page_item a {
+	font-weight: bold;
+}
+
+div.menu, #adtaily div {
+	padding-left: 10px;
+}
+
+.hentry {
+	position: static;
+}
+
+div.post.hentry {
+	padding: 10px;
+	border: 1px solid #FFFFFF;
+}
+
+div.post.hentry:hover {
+	background-color: #FAFAFA;
+	border: 1px solid #E8E8E8;
+}
+
+.entry-meta {
+	color: #999999;
+}
+
+.entry-meta a, .entry-meta abbr.entry-date {
+	color: #D70751;
+}
+
+#debian-logo {
+  right: 3px; 
+}

@@ -5,7 +5,7 @@ class Blip < ActiveResource::Base
   self.password = BLIP_CONFIG[:password]
   self.headers['X-Blip-API'] = '0.02'
   self.headers['Accept'] = 'application/json'
-  self.headers['User-Agent'] = '*'
+  self.headers['User-Agent'] = 'PlanetaDebiana'
   self.format = :json
 
   def self.create_from_template(body)
