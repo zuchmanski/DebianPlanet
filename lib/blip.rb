@@ -8,9 +8,9 @@ class Blip < ActiveResource::Base
   self.headers['User-Agent'] = 'PlanetaDebiana'
   self.format = :json
 
-  def self.create_from_template(body)
-    template_pre = "#planetadebiana \""
-    template_post = "\" http://planetadebiana.pl"
-    self.create(:body => (template_pre + body[0, 160-template_pre.size-template_post.size] + template_post))
+  def self.create_from_template(e)
+    template_pre = "\""
+    template_post = "\" http://www.planetadebiana.pl/redirect/#{e.id}"
+    self.create(:body => (template_pre + e.name[0, 160-template_pre.size-template_post.size] + template_post))
   end
 end

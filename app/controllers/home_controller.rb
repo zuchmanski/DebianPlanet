@@ -11,6 +11,10 @@ class HomeController < ApplicationController
     @bloggers = Blogger.all
   end
 
+  def about
+
+  end
+
   def contact
 
   end

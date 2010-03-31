@@ -6,7 +6,7 @@ class Blogger < ActiveRecord::Base
     feed = Feedzirra::Feed.fetch_and_parse(rss)
     feed.entries.each do |entry|
       unless feed_entries.exists? :guid => entry.id
-        feed_entries.create!(
+        e = feed_entries.create!(
           :blogger      => self,
           :name         => entry.title,
           :content      => entry.summary.gsub(/<\/?[^>]*>/, ""),
@@ -14,7 +14,7 @@ class Blogger < ActiveRecord::Base
           :published_at => entry.published,
           :guid         => entry.id
         )      
-        Blip.create_from_template(entry.title) if blip
+        Blip.create_from_template(e) if blip
       end
     end
   end
